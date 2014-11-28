@@ -74,6 +74,7 @@ brew install xz
 brew install ack
 #brew install exiv2
 brew install git
+brew install mercurial
 brew install imagemagick --with-webp
 brew install lua
 brew install lynx
@@ -92,3 +93,36 @@ brew install node
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+
+# Install native apps
+# Usage: `brew bundle Caskfile`
+
+install caskroom/cask/brew-cask
+tap caskroom/versions
+
+brew cask install sublime-text
+brew cask install dropbox	
+brew cask install virtualbox
+brew cask install google-chrome
+brew cask install the-unarchiver
+brew cask install java
+brew cask install netbeans-php
+brew cask install sourcetree
+brew cask install qt-creator
+brew cask install firefox
+brew cask install cyberduck
+brew cask install skype
+brew cask install slack
+brew cask install filezilla
+brew cask install kdiff3
+brew cask install libreoffice
+brew cask install mesasqlite
+brew cask install sqlite-professional
+brew cask install xnconvert	
+brew cask install vagrant
+brew cask install vlc
+brew cask install boot2docker	
+brew cask install iterm2
+
+
