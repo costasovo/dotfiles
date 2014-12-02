@@ -46,3 +46,18 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+# Aliases
+# Vagrant control aliases
+alias tom-start='cd ~/Vagrant/tom;vagrant up'
+alias tom-ssh='cd ~/Vagrant/tom;vagrant ssh'
+alias tom-stop='cd ~/Vagrant/tom;vagrant halt'
+
+# Files handling
+alias update-web-sdk='cd ~/Code/tom/tripomatic-sdk/;grunt build:browser --stage;cp ~/Code/tom/tripomatic-sdk/client/app/build/sdk-browser.js ~/Code/tom/tripomatic-ng/app/features/sdk-browser.js'
+
+#SDK
+alias sdk-start='cd ~/Code/tom/tripomatic-sdk;grunt'
+
+#SSH Keys
+alias load-keys='ssh-add ~/.ssh/bitbucket;ssh-add ~/.ssh/rosta_aws'

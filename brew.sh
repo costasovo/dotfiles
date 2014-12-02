@@ -91,6 +91,9 @@ brew install zopfli
 # installation method.
 brew install node
 
+# Composer
+brew install composer
+
 # Remove outdated versions from the cellar.
 brew cleanup
 
